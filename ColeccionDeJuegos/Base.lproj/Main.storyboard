@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="fT2-ed-Lwi">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZIc-FG-D5g">
                             <connections>
-                                <segue destination="k7t-I7-CQP" kind="show" id="8rC-y4-Q9b"/>
+                                <segue destination="k7t-I7-CQP" kind="show" identifier="juegoSegue" id="8rC-y4-Q9b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -60,30 +60,48 @@
                                     <constraint firstAttribute="width" constant="280" id="nYg-sa-hvA"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese Titulo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5F-n3-W46">
-                                <rect key="frame" x="67" y="310" width="280" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese Titulo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5F-n3-W46">
+                                <rect key="frame" x="67" y="486" width="280" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI0-SK-eNd">
-                                <rect key="frame" x="170" y="390" width="75.5" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI0-SK-eNd">
+                                <rect key="frame" x="169.5" y="596" width="75.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Agregar"/>
                                 <connections>
                                     <action selector="agregarTapped:" destination="k7t-I7-CQP" eventType="touchUpInside" id="KyR-iX-4Hr"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoc-Xd-Vg1">
+                                <rect key="frame" x="47" y="298" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAp-Gn-I3L">
+                                <rect key="frame" x="169" y="635" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="k7t-I7-CQP" eventType="touchUpInside" id="Mc6-gs-7Z3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CKi-nY-c6Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OI0-SK-eNd" firstAttribute="top" secondItem="w5F-n3-W46" secondAttribute="bottom" constant="20" id="3Q9-Ja-5ye"/>
                             <constraint firstItem="OI0-SK-eNd" firstAttribute="centerX" secondItem="tRB-Mg-JZm" secondAttribute="centerX" id="5kF-hj-NmG"/>
+                            <constraint firstItem="OI0-SK-eNd" firstAttribute="height" secondItem="zAp-Gn-I3L" secondAttribute="height" id="JkE-af-mR3"/>
+                            <constraint firstItem="w5F-n3-W46" firstAttribute="top" secondItem="xoc-Xd-Vg1" secondAttribute="bottom" constant="20" id="NmQ-nJ-xgr"/>
                             <constraint firstItem="ui4-c8-DJ6" firstAttribute="top" secondItem="CKi-nY-c6Z" secondAttribute="top" constant="32" id="OpS-j5-sQw"/>
+                            <constraint firstItem="xoc-Xd-Vg1" firstAttribute="top" secondItem="ui4-c8-DJ6" secondAttribute="bottom" constant="28" id="PmO-BU-aXw"/>
                             <constraint firstItem="ui4-c8-DJ6" firstAttribute="centerX" secondItem="w5F-n3-W46" secondAttribute="centerX" id="Qzg-l7-j9m"/>
-                            <constraint firstItem="w5F-n3-W46" firstAttribute="top" secondItem="ui4-c8-DJ6" secondAttribute="bottom" constant="40" id="WZt-6P-WnE"/>
+                            <constraint firstItem="OI0-SK-eNd" firstAttribute="centerX" secondItem="tRB-Mg-JZm" secondAttribute="centerX" id="cIk-pX-IGX"/>
+                            <constraint firstItem="zAp-Gn-I3L" firstAttribute="top" secondItem="OI0-SK-eNd" secondAttribute="bottom" constant="8" symbolic="YES" id="dEb-ib-T92"/>
+                            <constraint firstItem="OI0-SK-eNd" firstAttribute="centerX" secondItem="tRB-Mg-JZm" secondAttribute="centerX" id="dOV-V8-hjB"/>
+                            <constraint firstItem="zAp-Gn-I3L" firstAttribute="centerX" secondItem="tRB-Mg-JZm" secondAttribute="centerX" id="eVN-vV-HZW"/>
+                            <constraint firstItem="OI0-SK-eNd" firstAttribute="top" secondItem="w5F-n3-W46" secondAttribute="bottom" constant="28" id="hYZ-A6-SCC"/>
                             <constraint firstItem="ui4-c8-DJ6" firstAttribute="width" secondItem="w5F-n3-W46" secondAttribute="width" id="lgs-j2-FZq"/>
                             <constraint firstItem="ui4-c8-DJ6" firstAttribute="centerX" secondItem="tRB-Mg-JZm" secondAttribute="centerX" id="yRO-lB-Jz8"/>
+                            <constraint firstItem="xoc-Xd-Vg1" firstAttribute="centerX" secondItem="tRB-Mg-JZm" secondAttribute="centerX" id="zXS-4E-MCN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dS3-Ga-w9O">
@@ -101,13 +119,16 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="agregarActualizarBoton" destination="OI0-SK-eNd" id="l4u-cq-gzI"/>
+                        <outlet property="eliminarBoton" destination="zAp-Gn-I3L" id="I41-rg-etX"/>
                         <outlet property="imageView" destination="ui4-c8-DJ6" id="bId-pN-NMC"/>
+                        <outlet property="pickerVIew" destination="xoc-Xd-Vg1" id="MYo-ho-F3R"/>
                         <outlet property="tituloTextField" destination="w5F-n3-W46" id="T1v-nA-gzr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3RG-WE-xc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1977" y="84"/>
+            <point key="canvasLocation" x="1976.8115942028987" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Imm-YL-oil">
