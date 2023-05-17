@@ -17,6 +17,7 @@
 		E081788C2A152F250062EC40 /* ColeccionDeJuegosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081788B2A152F250062EC40 /* ColeccionDeJuegosTests.swift */; };
 		E08178962A152F250062EC40 /* ColeccionDeJuegosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08178952A152F250062EC40 /* ColeccionDeJuegosUITests.swift */; };
 		E08178982A152F250062EC40 /* ColeccionDeJuegosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08178972A152F250062EC40 /* ColeccionDeJuegosUITestsLaunchTests.swift */; };
+		E08178A52A1538E00062EC40 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08178A42A1538E00062EC40 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E08178912A152F250062EC40 /* ColeccionDeJuegosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColeccionDeJuegosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08178952A152F250062EC40 /* ColeccionDeJuegosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColeccionDeJuegosUITests.swift; sourceTree = "<group>"; };
 		E08178972A152F250062EC40 /* ColeccionDeJuegosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColeccionDeJuegosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E08178A42A1538E00062EC40 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E08178732A152F230062EC40 /* SceneDelegate.swift */,
 				E08178752A152F230062EC40 /* ViewController.swift */,
 				E08178772A152F230062EC40 /* Main.storyboard */,
+				E08178A42A1538E00062EC40 /* JuegosViewController.swift */,
 				E081787D2A152F250062EC40 /* Assets.xcassets */,
 				E081787F2A152F250062EC40 /* LaunchScreen.storyboard */,
 				E08178822A152F250062EC40 /* Info.plist */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08178A52A1538E00062EC40 /* JuegosViewController.swift in Sources */,
 				E08178762A152F230062EC40 /* ViewController.swift in Sources */,
 				E08178722A152F230062EC40 /* AppDelegate.swift in Sources */,
 				E08178742A152F230062EC40 /* SceneDelegate.swift in Sources */,
